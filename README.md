@@ -1,6 +1,6 @@
 # Frontend-ToDo-App_Slack-Alerts-for-S3-Bucket-Changes
 
-![alt text](image\image.png)
+![alt text](image.png)
 
 
 ## Overview
@@ -34,17 +34,17 @@ This lab is ideal for those looking to gain hands-on experience with serverless 
 
 Choose **US East (N. Virginia)** region.
 
-![alt text](image\image-1.png)
+![alt text](image-1.png)
 
 
 
 Go to Amazon S3
 
-![alt text](image\image-2.png)
+![alt text](image-2.png)
 
 Bucket name: frontend-todo-lab-bucket
 
-![alt text](image\image-3.png)
+![alt text](image-3.png)
 
 Click the create
 Keep the default setting.
@@ -54,18 +54,18 @@ Keep the default setting.
 Go to cloudfront
 
 Create cloudfront distribution
-![alt text](image\image-4.png)
+![alt text](image-4.png)
 
 Distribution name: 
-![alt text](image\image-5.png)
+![alt text](image-5.png)
 
 Choose origin access control settings
 
-![alt text](image\image-6.png)
+![alt text](image-6.png)
 
 Create OAC
 
-![alt text](image\image-7.png)
+![alt text](image-7.png)
 
 
 
@@ -73,30 +73,30 @@ Create OAC
 under Default cache behavior
 
 
-![alt text](image\image-8.png)
+![alt text](image-8.png)
 
 
 Check do not enable security protections
 
-![alt text](image\image-9.png)
+![alt text](image-9.png)
 
 Choose price class as Use North America, Europe, Asia, Middle East, and Africa
 
-![alt text](image\image-10.png)
+![alt text](image-10.png)
 
 If have certificate, can add certificate. After that just keep as default and click create distribution
 
-![alt text](image\image-11.png)
+![alt text](image-11.png)
 
 Check Cloudfront distribution and copy the S3 bucket policy.
-![alt text](image.png)
+![alt text](image-12.png)
 
 Go to Amazon S3 and add bucket which copy from Cloudfront distribution. (Go to bucket permission)
 
 
-![alt text](image-1.png)
+![alt text](image-13.png)
 
-![alt text](image-2.png)
+![alt text](image-14.png)
 
 Please check bucket policy example as below;
 
@@ -126,7 +126,7 @@ Please check bucket policy example as below;
 
 Go to IAM and user need to add user permission.
 
-![alt text](image-3.png)
+![alt text](image-15.png)
 
 
 
