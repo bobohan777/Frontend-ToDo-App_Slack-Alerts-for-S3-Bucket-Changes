@@ -35,17 +35,17 @@ This lab is ideal for those looking to gain hands-on experience with serverless 
 
 Choose **US East (N. Virginia)** region.
 
-![alt text](image-1.png)
+![alt text](assets/image-1.png)
 
 
 
 Go to ***Amazon S3***
 
-![alt text](image-2.png)
+![alt text](assets/image-2.png)
 
 Bucket name: ***frontend-todo-lab-bucket***
 
-![alt text](image-3.png)
+![alt text](assets/image-3.png)
 
 Click the create
 Keep the default setting.
@@ -55,47 +55,47 @@ Keep the default setting.
 Go to cloudfront
 
 Create cloudfront distribution
-![alt text](image-4.png)
+![alt text](assets/image-4.png)
 
 Distribution name: 
-![alt text](image-5.png)
+![alt text](assets/image-5.png)
 
 Choose origin access control settings
 
-![alt text](image-6.png)
+![alt text](assets/image-6.png)
 
 Create OAC
 
-![alt text](image-7.png)
+![alt text](assets/image-7.png)
 
 
 under Default cache behavior
 
 
-![alt text](image-8.png)
+![alt text](assets/image-8.png)
 
 
 Check do not enable security protections
 
-![alt text](image-9.png)
+![alt text](assets/image-9.png)
 
 Choose price class as Use ***North America, Europe, Asia, Middle East, and Africa***
 
-![alt text](image-10.png)
+![alt text](assets/image-10.png)
 
 If have certificate, can add certificate. After that just keep as default and click create distribution
 
-![alt text](image-11.png)
+![alt text](assets/image-11.png)
 
 Check Cloudfront distribution and copy the S3 bucket policy.
-![alt text](image-12.png)
+![alt text](assets/image-12.png)
 
 Go to Amazon S3 and add bucket which copy from Cloudfront distribution. (Go to bucket permission)
 
 
-![alt text](image-13.png)
+![alt text](assets/image-13.png)
 
-![alt text](image-14.png)
+![alt text](assets/image-14.png)
 
 Please check bucket policy example as below;
 
@@ -125,12 +125,12 @@ Please check bucket policy example as below;
 
 Go to IAM and user need to add user permission.
 
-![alt text](image-15.png)
+![alt text](assets/image-15.png)
 
 
 Go to Cloudfront distribution page and go to error page. Choose create error page.
 
-![alt text](image-16.png)
+![alt text](assets/image-16.png)
 
 
 Update CloudFront Settings
@@ -142,28 +142,28 @@ Click Edit under the General settings.
 
 Under Alternate domain name (CNAME), add:
 
-![alt text](image-17.png)
+![alt text](assets/image-17.png)
 
 
 ```bash
 todo.kloudpro.store
 ```
 
-![alt text](image-18.png)
+![alt text](assets/image-18.png)
 
 It may need to choose SSL certificate.
 
-![alt text](image-23.png)
+![alt text](assets/image-23.png)
 
 Just keep other setting as default.
 
-![alt text](image-24.png)
+![alt text](assets/image-24.png)
 
-![alt text](image-26.png)
+![alt text](assets/image-26.png)
 
 ***Wait sometime to dns resolved.***
 
-![alt text](image-25.png)
+![alt text](assets/image-25.png)
 
 ## ***Part 2***
 
@@ -531,7 +531,7 @@ Replace <YOUR_SLACK_WEBHOOK_URL> with your actual Slack webhook URL (e.g., https
 
 Adding webhooks in slack api.
 
-![alt text](image-19.png)
+![alt text](assets/image-19.png)
 
 ***Note: Please check in reference url***  
 ***https://www.svix.com/resources/guides/how-to-get-slack-webhook-url/***
@@ -614,14 +614,14 @@ aws s3api put-bucket-acl \
 Check Slack:
 Look for a notification (e.g., 🚨 S3 bucket frontend-todo-lab-bucket has a public ACL!).
 
-![alt text](image-20.png)
+![alt text](assets/image-20.png)
 
 Check Logs:
 
 ```bash
 aws logs tail /aws/lambda/DetectPublicS3Changes --region us-east-1
 ```
-![alt text](image-21.png)
+![alt text](assets/image-21.png)
 
 
 
@@ -636,7 +636,7 @@ aws s3api put-public-access-block \
 
 Check Slack for 🚨 Public access block disabled for frontend-todo-lab-bucket!.
 
-![alt text](image-22.png)
+![alt text](assets/image-22.png)
 
 Troubleshooting:
 
