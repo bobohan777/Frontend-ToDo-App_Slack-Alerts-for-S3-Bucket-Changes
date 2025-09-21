@@ -1,6 +1,6 @@
 # ***Frontend-ToDo-App_Slack-Alerts-for-S3-Bucket-Changes***
 
-![alt text](image.png)
+![alt text](assets/image.png)
 
 
 ### ***Overview***
